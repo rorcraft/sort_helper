@@ -1,3 +1,3 @@
 module ApplicationHelper
-  include SortableTable::App::Helpers::ApplicationHelper
+  include SortHelper::App::Helpers::ApplicationHelper
 end

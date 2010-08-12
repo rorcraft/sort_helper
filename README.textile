@@ -9,13 +9,13 @@ h2. Install
 In app/controllers/application_controller.rb:
 
     class ApplicationController < ActionController::Base
-      include SortableTable::App::Controllers::ApplicationController
+      include SortHelper::App::Controllers::ApplicationController
     end
 
 In app/helpers/application_helper.rb:
 
     module ApplicationHelper
-      include SortableTable::App::Helpers::ApplicationHelper
+      include SortHelper::App::Helpers::ApplicationHelper
     end
 
 h2. Testing

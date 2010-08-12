@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
   helper :all
   protect_from_forgery
-  include SortableTable::App::Controllers::ApplicationController
+  include SortHelper::App::Controllers::ApplicationController
 end

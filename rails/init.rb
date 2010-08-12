@@ -1,1 +1,1 @@
-require "sortable_table"
+require "sort_helper"

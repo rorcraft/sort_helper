@@ -1,4 +1,4 @@
-module SortableTable
+module SortHelper
   module Shoulda
 
     class Attribute
@@ -142,7 +142,7 @@ module SortableTable
   end
 end
 
-module SortableTable
+module SortHelper
   module ShouldaHelpers
     def assert_db_records_exist_for(model_under_test)
       assert model_under_test.count >= 2,
@@ -195,5 +195,5 @@ module SortableTable
   end
 end
  
-Test::Unit::TestCase.extend(SortableTable::Shoulda)
-Test::Unit::TestCase.send(:include, SortableTable::ShouldaHelpers)
+Test::Unit::TestCase.extend(SortHelper::Shoulda)
+Test::Unit::TestCase.send(:include, SortHelper::ShouldaHelpers)
